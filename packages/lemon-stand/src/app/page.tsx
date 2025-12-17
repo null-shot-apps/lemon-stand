@@ -9,7 +9,7 @@ const products = [
     id: 1,
     name: 'Classic White Tee',
     price: 29.99,
-    image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=500&fit=crop',
+    image: 'https://images.unsplash.com/photo-1557800636-894a64c1696f?w=500&h=500&fit=crop',
     description: 'Premium cotton white t-shirt',
     sizes: ['S', 'M', 'L', 'XL', 'XXL']
   },
@@ -17,7 +17,7 @@ const products = [
     id: 2,
     name: 'Black Essential',
     price: 29.99,
-    image: 'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=500&h=500&fit=crop',
+    image: 'https://images.unsplash.com/photo-1595246140625-573b715d11dc?w=500&h=500&fit=crop',
     description: 'Timeless black cotton tee',
     sizes: ['S', 'M', 'L', 'XL', 'XXL']
   },
@@ -25,7 +25,7 @@ const products = [
     id: 3,
     name: 'Navy Blue Classic',
     price: 32.99,
-    image: 'https://images.unsplash.com/photo-1622445275463-afa2ab738c34?w=500&h=500&fit=crop',
+    image: 'https://images.unsplash.com/photo-1513003452032-9d2509e3dbdd?w=500&h=500&fit=crop',
     description: 'Deep navy premium fabric',
     sizes: ['S', 'M', 'L', 'XL', 'XXL']
   },
@@ -33,7 +33,7 @@ const products = [
     id: 4,
     name: 'Vintage Gray',
     price: 34.99,
-    image: 'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=500&h=500&fit=crop',
+    image: 'https://images.unsplash.com/photo-1587486937699-c0d8e0c0e8e8?w=500&h=500&fit=crop',
     description: 'Soft heather gray comfort',
     sizes: ['S', 'M', 'L', 'XL', 'XXL']
   },
@@ -41,7 +41,7 @@ const products = [
     id: 5,
     name: 'Forest Green',
     price: 32.99,
-    image: 'https://images.unsplash.com/photo-1562157873-818bc0726f68?w=500&h=500&fit=crop',
+    image: 'https://images.unsplash.com/photo-1606041011872-596597976b25?w=500&h=500&fit=crop',
     description: 'Rich forest green cotton',
     sizes: ['S', 'M', 'L', 'XL', 'XXL']
   },
@@ -49,7 +49,7 @@ const products = [
     id: 6,
     name: 'Burgundy Premium',
     price: 34.99,
-    image: 'https://images.unsplash.com/photo-1503341338985-c4c2e2a8e1c7?w=500&h=500&fit=crop',
+    image: 'https://images.unsplash.com/photo-1587486937699-c0d8e0c0e8e8?w=500&h=500&fit=crop',
     description: 'Elegant burgundy tee',
     sizes: ['S', 'M', 'L', 'XL', 'XXL']
   }
@@ -204,6 +204,7 @@ function ProductCard({ product, onAddToCart }: {
     </div>
   );
 }
+
 
 
 
