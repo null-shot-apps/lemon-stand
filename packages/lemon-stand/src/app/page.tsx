@@ -61,8 +61,6 @@ export default function Home() {
 
   const addToCart = (product: typeof products[0], size: string) => {
     setCart([...cart, { id: product.id, name: product.name, price: product.price, size }]);
-    setShowCart(true);
-    setTimeout(() => setShowCart(false), 2000);
   };
 
   const cartTotal = cart.reduce((sum, item) => sum + item.price, 0);
@@ -89,12 +87,7 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Cart Notification */}
-      {showCart && (
-        <div className="fixed top-20 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 animate-fade-in">
-          Added to cart!
-        </div>
-      )}
+
 
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
@@ -113,11 +106,11 @@ export default function Home() {
         </div>
       </main>
 
-      {/* Cart Sidebar */}
+      {/* Cart Popup Window */}
       {showCart && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50" onClick={() => setShowCart(false)}>
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center" onClick={() => setShowCart(false)}>
           <div 
-            className="fixed right-0 top-0 h-full w-full max-w-md bg-white shadow-xl p-6 overflow-y-auto"
+            className="bg-white rounded-lg shadow-2xl p-6 w-full max-w-md max-h-[80vh] overflow-y-auto m-4"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex justify-between items-center mb-6">
@@ -211,4 +204,7 @@ function ProductCard({ product, onAddToCart }: {
     </div>
   );
 }
+
+
+
 
